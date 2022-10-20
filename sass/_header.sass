@@ -1,0 +1,122 @@
+.header
+    position: relative
+    &__video
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        display: block
+        width: 100%
+        z-index: 0
+    &__motto
+        position: absolute
+        top: 40%
+        left: 147px
+        right: 60px
+        transform: translateY(-50%)
+        color: #FFFFFF
+        z-index: 2
+    &__motto-links
+        display: flex
+        flex-direction: column
+        gap: 25px
+    &__title
+        width: 368px
+    &__paragraph
+        font-family: "freightbigcmp-pro"
+        font-size: 96px
+        max-width: 560px
+        line-height: 87px
+        margin-bottom: 62px
+    &__arrow
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(-50%)
+        width: 20px
+        display: none
+        animation: opacity-pulse
+        animation-iteration-count: infinite
+        animation-duration: 2s
+        z-index: 10
+    &__popup
+        position: fixed
+        width: 150px
+        height: 100px
+        background-color: #FCF7F2
+        color: black
+        right: 4%
+        border-radius: 10px
+        padding: 24px
+        box-shadow: 0px 2px 6px 3px rgba(227, 217, 207, 0.3)
+        z-index: 10
+    &__text
+        font-size: 16px
+        line-height: 21px
+        text-align: center
+    &__popup-link
+        display: block
+        border: 1px solid #222222
+        width: 100%
+        height: 46px
+        line-height: 46px
+        margin: 0 auto
+        margin-top: 15px
+        font-size: 13px
+        text-decoration: none
+        color: #222222
+        text-align: center
+        transition: .3s
+        &:hover
+            background-color: #222222
+            color: white
+    &__link
+        display: block
+        width: 280px
+        height: 48px
+        color: #FFFFFF
+        font-size: 13px
+        text-align: center
+        line-height: 47px
+        text-decoration: none
+        background-color: #222222
+        transition: .3s
+        &:hover
+            background-color: black
+    &__buttons
+        position: absolute
+        top: 50%
+        left: 50%
+        -webkit-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+        width: 60px
+        height: 60px
+        cursor: pointer
+        z-index: 3
+    &__buttons-img
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        -webkit-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+    &__placeholder
+        position: relative
+    &__placeholder-img
+        display: block
+        width: 100%
+        aspect-ratio: 1920/1080
+    &__placeholder-loader
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 50px
+
+@keyframes opacity-pulse
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1

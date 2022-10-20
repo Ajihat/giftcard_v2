@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Karta podarunkowa</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="header__buttons">
+                    <img
+                        src="assets/pause-btn.svg"
+                        alt="icon"
+                        class="header__buttons-img"
+                    />
+                </div>
+                <div class="header__placeholder">
+                    <img
+                        src="assets/bcg-placeholder-desktop.jpg"
+                        alt="background"
+                        class="header__placeholder-img"
+                        id="video-placeholder"
+                    />
+                    <img
+                        src="assets/loadIcon.gif"
+                        alt="loader"
+                        class="header__placeholder-loader"
+                    />
+                </div>
+                <video
+                    class="header__video header__video--js"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                >
+                    <source src="" type="video/mp4" />
+                </video>
+                <div class="header__motto">
+                    <img
+                        src="assets/KartaPodarunkowa.svg"
+                        alt=""
+                        class="header__title"
+                    />
+                    <p class="header__paragraph">
+                        Nie masz pomysłu na prezent?
+                    </p>
+                    <div class="header__motto-links">
+                        <a
+                            class="header__link"
+                            href="https://giftcard.ccc.eu/shop/page/ecard_choose"
+                            >Kup Wirtualną Kartę Podarunkową</a
+                        >
+                        <a
+                            class="header__link"
+                            href="https://giftcard.ccc.eu/shop/page/pcard_choose"
+                            >Kup Kartę Podarunkową</a
+                        >
+                    </div>
+                </div>
+                <div class="header__popup">
+                    <p class="header__text">Posiadasz już jedną z kart?</p>
+                    <a
+                        href="https://giftcard.ccc.eu/sprawdz-saldo"
+                        class="header__popup-link"
+                        >Sprawdź saldo</a
+                    >
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <div class="nav__link first">
+                            <span class="nav__text">
+                                <img
+                                    src="assets/icon-1.svg"
+                                    alt=""
+                                    class="nav__img"
+                                />
+                                Wirtualna Karta Podarunkowa
+                            </span>
+                            <div
+                                class="nav__bottom-line"
+                                style="display: block"
+                            ></div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__link middle">
+                            <span class="nav__text">
+                                <img
+                                    src="assets/icon-2.svg"
+                                    alt=""
+                                    class="nav__img"
+                                />
+                                Karta Podarunkowa
+                            </span>
+                            <div
+                                class="nav__bottom-line"
+                                style="display: none"
+                            ></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+      <section class="physical" id="physical" name="physical">
+      <div class="points" id="points">
+        <div class="points__inner">
+          <video src="video/GC2 (3)_1.mp4" class="points__video" autoplay loop muted></video>
+        </div>
+        <div class="points__inner">
+          <ul class="points__list">
+            <h2 class="points__title">Jak kupić</br>Kartę Podarunkową?</h2>
+            <li class="points__item">
+              <img src="assets/circle.svg" alt="" class="points__tick" />
+              <p class="points__text">Wejdź na stronę Karty Podarunkowej</p>
+            </li>
+            <li class="points__item">
+              <img src="assets/circle.svg" alt="" class="points__tick" />
+              <p class="points__text">Doładuj kartę </p>
+            </li>
+            <li class="points__item">
+              <img src="assets/circle.svg" alt="" class="points__tick" />
+              <p class="points__text">Wybierz jak i gdzie dostarczyć kartę</p>
+            </li>
+            <li class="points__item">
+              <img src="assets/circle.svg" alt="" class="points__tick" />
+              <p class="points__text">Gotowe!</p>
+            </li>
+          </ul>
+          <a href="https://giftcard.ccc.eu/shop/page/pcard_choose" class="points__link">Kup Kartę Podarunkową</a>
+        </div>
+      </div>
+      <div class="saldo">
+        <h3 class="saldo__title">
+          Masz już<br>Kartę Podarunkową?
+        </h3>
+        <a href="https://giftcard.ccc.eu/sprawdz-saldo" class="saldo__link">Sprawdź saldo</a>
+      </div>
+      <div class="instructions">
+        <h2 class="instructions__title"><span class="instructions__inner">Wygodny</span><br>sposób na prezent</h2>
+        <div class="instructions__items">
+          <div class="instructions__item">
+            <img src="assets/image-1.svg" alt="" class="instructions__img">
+            <p class="instructions__paragraph">Kartę Podarunkową możesz kupić
+              w sklepie stacjonarnym
+            </p>
+            <a href="https://ccc.eu/pl/sklepy" class="instructions__link">Znajdź najblższy sklep</a>
+          </div>
+          <div class="instructions__item">
+            <img src="assets/image-2.svg" alt="" class="instructions__img">
+            <p class="instructions__paragraph">Kartę Podarunkową możesz też kupić online
+            </p>
+          </div>
+          <div class="instructions__item">
+            <img src="assets/image-3.svg" alt="" class="instructions__img">
+            <p class="instructions__paragraph">Doładuj kartę na dowolną kwotę
+              od 50 do 2000 zł
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-carousel-with-arrows scroll-carousel-with-arrows--js">
+        <div class="arrows">
+          <div class="arrows__arrow arrows__arrow--left-js">
+            <img class="scroll-carousel-with-arrows__image" src="assets/left-arrow.svg" alt="arrow" />
+          </div>
+          <div class="arrows__arrow arrows__arrow--right-js">
+            <img class="scroll-carousel-with-arrows__image" src="assets/right-arrow.svg" alt="arrow" />
+          </div>
+        </div>
+
+        <div class="
+                scroll-carousel-with-arrows__wrapper
+                scroll-carousel-with-arrows__wrapper--js
+              ">
+          <div class="scroll-carousel-with-arrows__container">
+            <a class="
+                    scroll-carousel-with-arrows__item
+                    scroll-carousel-with-arrows__item--js
+                  " onclick="return false" href="#">
+              <img class="scroll-carousel-with-arrows__image img" src="assets/05.jpg" alt="Photo" />
+            </a>
+            <a class="scroll-carousel-with-arrows__item" href="#" onclick="return false">
+              <img class="scroll-carousel-with-arrows__image img" src="assets/02.jpg" alt="Photo" />
+            </a>
+            <a class="scroll-carousel-with-arrows__item" href="#" onclick="return false">
+              <img class="scroll-carousel-with-arrows__image img" src="assets/03.jpg" alt="Photo" />
+            </a>
+            <a class="scroll-carousel-with-arrows__item smallerimg" href="#" onclick="return false">
+              <img class="scroll-carousel-with-arrows__image img" src="assets/04.jpg" alt="Photo" />
+            </a>
+            <a class="scroll-carousel-with-arrows__item" href="#" onclick="return false">
+              <img class="scroll-carousel-with-arrows__image img" src="assets/01.jpg" alt="Photo" />
+            </a>
+            <a class="scroll-carousel-with-arrows__item smallerimg" href="#" onclick="return false">
+              <img class="scroll-carousel-with-arrows__image img" src="assets/06.jpg" alt="Photo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+            <section class="electronic" id="electronic" name="electronic">
+                <div class="points padding-smaller" id="epoints">
+                    <div class="points__inner">
+                        <img src="assets/bb.gif" alt="" class="points__img" />
+                    </div>
+                    <div class="points__inner">
+                        <ul class="points__list">
+                            <h2 class="points__title">
+                                Kup bez wychodzenia<br />
+                                z domu
+                            </h2>
+                            <li class="points__item">
+                                <img
+                                    src="assets/circle.svg"
+                                    alt=""
+                                    class="points__tick"
+                                />
+                                <p class="points__text">
+                                    Wejdź na stronę Karty Podarunkowej
+                                </p>
+                            </li>
+                            <li class="points__item">
+                                <img
+                                    src="assets/circle.svg"
+                                    alt=""
+                                    class="points__tick"
+                                />
+                                <p class="points__text">
+                                    Wybierz wzór i doładuj kartę na dowolną
+                                    kwotę
+                                </p>
+                            </li>
+                            <li class="points__item">
+                                <img
+                                    src="assets/circle.svg"
+                                    alt=""
+                                    class="points__tick"
+                                />
+                                <p class="points__text">Wskaż adres mailowy</p>
+                            </li>
+                            <li class="points__item">
+                                <img
+                                    src="assets/circle.svg"
+                                    alt=""
+                                    class="points__tick"
+                                />
+                                <p class="points__text">Gotowe!</p>
+                            </li>
+                        </ul>
+                        <a
+                            href="https://giftcard.ccc.eu/shop/page/ecard_choose"
+                            class="points__link"
+                            >Kup Wirtualną Kartę Podarunkową</a
+                        >
+                    </div>
+                </div>
+                <div class="slider-cards">
+                    <div class="slider-cards__item">
+                        <img
+                            src="assets/card1.jpg"
+                            alt=""
+                            class="slider-cards__img"
+                        />
+                    </div>
+                    <div class="slider-cards__item">
+                        <img
+                            src="assets/card2.jpg"
+                            alt=""
+                            class="slider-cards__img"
+                        />
+                    </div>
+                    <div class="slider-cards__item">
+                        <img
+                            src="assets/card3.jpg"
+                            alt=""
+                            class="slider-cards__img"
+                        />
+                    </div>
+                    <div class="slider-cards__item">
+                        <img
+                            src="assets/card4.jpg"
+                            alt=""
+                            class="slider-cards__img"
+                        />
+                    </div>
+                </div>
+                <div class="saldo">
+                    <h3 class="saldo__title">
+                        Masz już<br />Kartę Podarunkową?
+                    </h3>
+                    <a
+                        href="https://giftcard.ccc.eu/sprawdz-saldo"
+                        class="saldo__link"
+                        >Sprawdź saldo</a
+                    >
+                </div>
+                <div class="instructions">
+                    <h2 class="instructions__title">
+                        <span class="instructions__inner"
+                            >Sposób na prezent</span
+                        ><br />
+                        bez wychodzenia<br />
+                        z domu
+                    </h2>
+                    <div class="instructions__items">
+                        <div class="instructions__item">
+                            <img
+                                src="assets/image-2.svg"
+                                alt=""
+                                class="instructions__img"
+                            />
+                            <p class="instructions__paragraph">
+                                Wirtualną Kartę Podarunkową możesz kupić online
+                            </p>
+                        </div>
+                        <div class="instructions__item">
+                            <img
+                                src="assets/image-4.svg"
+                                alt=""
+                                class="instructions__img"
+                            />
+                            <p class="instructions__paragraph">
+                                Wirtualną Kartę Podarunkową otrzymasz
+                                natychmiastowo po zakupie
+                            </p>
+                        </div>
+                        <div class="instructions__item">
+                            <img
+                                src="assets/image-3.svg"
+                                alt=""
+                                class="instructions__img"
+                            />
+                            <p class="instructions__paragraph">
+                                Doładuj kartę na dowolną kwotę od 50 do 2000 zł
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="howto" id="howto" name="howto">
+                <div class="wrap">
+                    <div class="faq">
+                        <p class="faq__title">Masz pytania?</p>
+                        <div class="faq__question">
+                            <p class="faq__paragraph">
+                                Gdzie znajdę PIN potrzebny do sprawdzenia salda
+                                Karty?
+                            </p>
+                            <div class="faq__btn">
+                                <div class="faq__btn-line"></div>
+                                <div class="faq__btn-line vertical"></div>
+                            </div>
+                            <p class="faq__answer">
+                                Kod PIN znajdziesz na odwrocie Karty
+                                Podarunkowej lub w wiadomości e-mail, w której
+                                przesłaliśmy Ci Wirtualną Kartę Podarunkową.
+                            </p>
+                        </div>
+                        <div class="faq__question">
+                            <p class="faq__paragraph">
+                                Czy mogę wykorzystać Kartę w sklepie
+                                stacjonarnym i internetowym CCC?
+                            </p>
+                            <div class="faq__btn">
+                                <div class="faq__btn-line"></div>
+                                <div class="faq__btn-line vertical"></div>
+                            </div>
+                            <p class="faq__answer">
+                                Tak. Karta Podarunkowa i Wirtualna Karta
+                                Podarunkowa mogą być wykorzystane przy zakupie
+                                produktów w sklepach stacjonarnych CCC i na
+                                <a class="faq__link" href="https://ccc.eu/"
+                                    >ww.ccc.eu</a
+                                >. Podczas jednej transakcji można wykorzystać
+                                kilka Kart Podarunkowych.
+                            </p>
+                        </div>
+                        <div class="faq__question">
+                            <p class="faq__paragraph">
+                                Jak mogę sprawdzić saldo środków na mojej
+                                Karcie?
+                            </p>
+                            <div class="faq__btn">
+                                <div class="faq__btn-line"></div>
+                                <div class="faq__btn-line vertical"></div>
+                            </div>
+                            <p class="faq__answer">
+                                Aby sprawdzić saldo środków dostępnych na Karcie
+                                Podarunkowej lub Wirtualnej Karcie Podarunkowej
+                                należy wejść na stronę
+                                <a
+                                    class="faq__link"
+                                    href="https://giftcard.ccc.eu/sprawdz-saldo"
+                                    >www.giftcard.ccc.eu/sprawdz-saldo</a
+                                >, następnie w odpowiednie pola wpisać numer
+                                Karty lub Wirtualnej Karty Podarunkowej i
+                                przypisany do niej kod PIN.
+                            </p>
+                        </div>
+                        <div class="faq__question">
+                            <p class="faq__paragraph">
+                                Czy Karta Podarunkowa jest jednorazowa?
+                            </p>
+                            <div class="faq__btn">
+                                <div class="faq__btn-line"></div>
+                                <div class="faq__btn-line vertical"></div>
+                            </div>
+                            <p class="faq__answer">
+                                Nie, Karta Podarunkowa lub Wirtualna Karta
+                                Podarunkowa mogą być wykorzystywane
+                                wielokrotnie, aż do pełnego wykorzystania salda.
+                            </p>
+                        </div>
+                        <div class="faq__question">
+                            <p class="faq__paragraph">
+                                Jak długo ważna jest Karta Podarunkowa?
+                            </p>
+                            <div class="faq__btn">
+                                <div class="faq__btn-line"></div>
+                                <div class="faq__btn-line vertical"></div>
+                            </div>
+                            <p class="faq__answer">
+                                Karta Podarunkowa ważna jest 24 miesiące. W
+                                przypadku, gdy po upływie tego czasu na karcie
+                                pozostają środki do wykorzystania, jej ważność
+                                może być wydłużona. W celu przedłużenia ważności
+                                należy skontaktować się z Biurem Obsługi
+                                Klienta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-footer">
+                    <div class="footer">
+                        <h2 class="footer__title">Skontaktuj się</h2>
+                        <div class="footer__container">
+                            <div class="footer__inner">
+                                <p class="footer__text1">
+                                    +42 21 44 222 <br />
+                                    801 002 222
+                                </p>
+                                <div class="footer__wrap">
+                                    <p class="footer__text2">
+                                        Poniedziałek - piątek: 09:00 - 20:00<br />
+                                        Sobota: 09:00 - 17:00
+                                    </p>
+                                    <a
+                                        href="tel:{801 002 222}"
+                                        class="footer__link"
+                                        >Zadzwoń do nas</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="footer__inner">
+                                <p class="footer__text1">info.pl@ccc.eu</p>
+                                <div class="footer_wrap">
+                                    <p class="footer__text2">
+                                        Odpowiemy <br />jak najszybciej
+                                    </p>
+                                    <a
+                                        href="https://ccc.eu/pl/kontakt"
+                                        class="footer__link white"
+                                        >Napisz do nas</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__white-line"></div>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                var videoTag = document.querySelector('.header__video--js'),
+                    videoSourceTag = document.querySelector(
+                        '.header__video--js source'
+                    ),
+                    desktopVideoSrc = 'video/video-1920x108056a410ae.mp4',
+                    mobileVideoSrc = 'video/video-764x76465db223d.mp4',
+                    videoSourceSrc = videoSourceTag.getAttribute('src'),
+                    videoSourceDataSrc =
+                        videoSourceTag.getAttribute('data-src'),
+                    tabletMediaQuery = 764,
+                    HeaderBtnLink = document.querySelector('.header__link'),
+                    firstNavLink = document.querySelector('.nav__link.first'),
+                    secondNavLink = document.querySelector('.nav__link.middle'),
+                    electronicSection = document.getElementById('electronic'),
+                    physicalSection = document.getElementById('physical'),
+                    FixedPopupElement =
+                        document.querySelector('.header__popup'),
+                    videoButtonArea =
+                        document.querySelector('.header__buttons'),
+                    videoButton = document.querySelector(
+                        '.header__buttons-img'
+                    );
+
+                  firstNavLink.addEventListener('click', function(){
+                    electronicSection.style.display = 'flex';
+                    physicalSection.style.display = 'none'
+
+                  })
+
+                  secondNavLink.addEventListener('click', function(){
+                    electronicSection.style.display = 'none';
+                    physicalSection.style.display = 'flex'
+
+                  })
+
+
+                function setVideoSource() {
+                    var windowWidth = window.innerWidth,
+                        videoSource = videoSourceTag.getAttribute('src');
+
+                    if (
+                        windowWidth > tabletMediaQuery &&
+                        videoSource !== desktopVideoSrc
+                    ) {
+                        videoSourceTag.setAttribute('src', desktopVideoSrc);
+                        videoTag.load();
+                    }
+                    if (
+                        windowWidth <= tabletMediaQuery &&
+                        videoSource !== mobileVideoSrc
+                    ) {
+                        videoSourceTag.setAttribute('src', mobileVideoSrc);
+                        videoTag.load();
+                    }
+                }
+
+                window.addEventListener('load', function () {
+                    setVideoSource();
+                });
+
+                window.addEventListener('resize', setVideoSource);
+
+                videoButtonArea.addEventListener('click', function () {
+                    if (videoTag.paused) {
+                        videoTag.play();
+                        videoButton.setAttribute('src', 'assets/pause-btn.svg');
+                    } else {
+                        videoTag.pause();
+                        videoButton.setAttribute('src', 'assets/play-btn.svg');
+                    }
+                });
+
+                var menuLinks = [...document.querySelectorAll('.nav__link')];
+                menuLinks.forEach(addBottomLine);
+
+                function addBottomLine(menuLink) {
+                    menuLink.addEventListener('click', function () {
+                        for (let i = 0; i < menuLinks.length; i++) {
+                            var linkLastChild = menuLinks[i].lastElementChild;
+                            linkLastChild.style.display = 'none';
+                        }
+                        this.lastElementChild.style.display = 'block';
+                    });
+                }
+
+                var faqQuestions = [
+                    ...document.querySelectorAll('.faq__question'),
+                ];
+                faqQuestions.forEach(openTab);
+
+                function openTab(faqQuestion) {
+                    faqQuestion.addEventListener('click', function () {
+                        var choosenFaqAnswer = this.lastElementChild;
+                        choosenFaqAnswer.classList.toggle('visible');
+                        var choosenFaqButton =
+                            this.children[1].lastElementChild;
+                        choosenFaqButton.classList.toggle('open');
+                    });
+                }
+
+                var scrollCarousel = document.querySelectorAll(
+                    '.scroll-carousel-with-arrows--js'
+                );
+                var carousel = document.querySelector(
+                    '.scroll-carousel-with-arrows__wrapper--js'
+                );
+
+                var scroll = (item) => {
+                    var leftArrow = item.querySelector(
+                        '.arrows__arrow--left-js'
+                    );
+                    var rightArrow = item.querySelector(
+                        '.arrows__arrow--right-js'
+                    );
+                    var carousel = item.querySelector(
+                        '.scroll-carousel-with-arrows__wrapper--js'
+                    );
+
+                    var scrollRight = () => {
+                        var carouselItem = document.querySelector(
+                            '.scroll-carousel-with-arrows__item--js'
+                        );
+                        var galleryContainer = document.querySelector(
+                            '.scroll-carousel-with-arrows__container'
+                        );
+                        var scrollDistance = carouselItem.offsetWidth;
+                        carousel.scrollBy(scrollDistance, 0);
+                        if (
+                            carousel.scrollLeft + carousel.offsetWidth >=
+                            galleryContainer.offsetWidth
+                        ) {
+                            galleryIsScrolled = true;
+                            carousel.scrollLeft = 0;
+                        }
+                    };
+
+                    var scrollLeft = () => {
+                        var carouselItem = document.querySelector(
+                            '.scroll-carousel-with-arrows__item--js'
+                        );
+                        var scrollDistance = carouselItem.offsetWidth;
+                        carousel.scrollBy(-scrollDistance, 0);
+                    };
+
+                    leftArrow.addEventListener('click', scrollLeft);
+                    rightArrow.addEventListener('click', scrollRight);
+                };
+
+                scrollCarousel.forEach((item) => {
+                    scroll(item);
+                });
+
+                var mainLp = document.querySelector('.main');
+
+                window.addEventListener('scroll', function () {
+                    var mainLpHeight = mainLp.offsetHeight;
+
+                    if (window.scrollY > 0.75 * mainLpHeight) {
+                        var fixedPopup =
+                            document.querySelector('.header__popup');
+                        fixedPopup.style.zIndex = '0';
+                        fixedPopup.style.opacity = '0';
+                    } else {
+                        var fixedPopup =
+                            document.querySelector('.header__popup');
+                        fixedPopup.style.zIndex = '5';
+                        fixedPopup.style.opacity = '1';
+                    }
+                });
+
+                var imagesSlider = [
+                    ...document.querySelectorAll(
+                      '.scroll-carousel-with-arrows__image.img'
+                    ),
+                ];
+
+                imagesSlider.forEach((imageSlider) => {
+                    imageSlider.addEventListener("click", function () {
+                        var carousel = document.querySelector(
+                            '.scroll-carousel-with-arrows__wrapper--js'
+                        );
+                        var galleryContainer = document.querySelector(
+                            '.scroll-carousel-with-arrows__container'
+                        );
+                        var carouselItem = document.querySelector(
+                            '.scroll-carousel-with-arrows__item--js'
+                        );
+                        var scrollDistance = carouselItem.offsetWidth;
+                        carousel.scrollBy(scrollDistance, 0);
+                        if (
+                            carousel.scrollLeft + carousel.offsetWidth >=
+                                galleryContainer.offsetWidth &&
+                            galleryIsScrolled === true
+                        ) {
+                            carousel.scrollLeft = 0;
+                            galleryIsScrolled = false;
+                        }
+                    });
+                });
+                var galleryIsScrolled = false;
+                carousel.addEventListener('scroll', function (e) {
+                    var carousel = document.querySelector(
+                      '.scroll-carousel-with-arrows__wrapper--js'
+                    );
+                    var galleryContainer = document.querySelector(
+                      '.scroll-carousel-with-arrows__container'
+                    );
+                    if (
+                        carousel.scrollLeft + carousel.offsetWidth >=
+                        galleryContainer.offsetWidth
+                    ) {
+                        galleryIsScrolled = true;
+                    }
+                });
+
+                const cardsSlider = [
+                    ...document.querySelectorAll('.slider-cards__item'),
+                ];
+                const slider = document.querySelector('.slider-cards');
+                let cardsSliderIsScrolled = false;
+                cardsSlider.forEach((cardSlider) => {
+                    cardSlider.addEventListener('click', function () {
+                        const cardSliderWidth = this.offsetWidth;
+                        slider.scrollBy(cardSliderWidth + 10, 0);
+                        if (
+                            slider.scrollLeft + slider.offsetWidth >=
+                                4 * cardsSlider[0].offsetWidth &&
+                            cardsSliderIsScrolled
+                        ) {
+                            slider.scrollLeft = 0;
+                            cardsSliderIsScrolled = false
+                            return;
+                        }
+                    });
+                });
+                slider.addEventListener('scroll', function () {
+                    if (
+                        slider.scrollLeft + slider.offsetWidth >=
+                        4 * cardsSlider[0].offsetWidth
+                    ) {
+                        cardsSliderIsScrolled = true;
+                    }
+                });
+            })();
+        </script>
+    </body>
+</html>

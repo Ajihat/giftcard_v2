@@ -1,0 +1,651 @@
+#physical, #electronic
+    max-width: 1300px
+    margin: auto
+#howto
+    width: 100%
+    background-color: #FCF7F2
+#physical, #electronic, #howto
+    position: relative
+    top: -104px
+    display: flex
+    flex-direction: column
+    animation: show-section 1s
+    z-index: 1
+    .cards
+        display: none
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0px 147px 60px 147px
+        background-color: #FCF7F2
+        border-bottom: 1px solid #B7B4B4
+        &__inner
+            width: 50%
+            height: 100%
+        &__motto
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            height: 320px
+        &_animation
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+        &__animation-physical
+            position: relative
+            left: 10px
+            width: 120%
+        &__title
+            font-family: 'UniversLTPro-65Bold'
+            font-size: 34px
+            font-weight: 700
+            line-height: 40px
+            margin-bottom: 27px
+            color: #222222
+            max-width: 450px
+        &__paragraph
+            font-size: 20px
+            font-weight: 400
+            line-height: 28px
+            margin-bottom: 53px
+            max-width: 390px
+        &__link
+            display: block
+            font-size: 13px
+            text-decoration: none
+            color: #FFFFFF
+            height: 48px
+            width: 280px
+            text-align: center
+            line-height: 47px
+            background-color: #222222
+            transition: .3s
+            &:hover
+                background-color: black
+    .instructions
+        display: none
+        padding: 58px 110px
+        background-color: #FCF7F2
+        &__title
+            text-align: center
+            font-size: 78px
+            line-height: 81px
+            font-weight: 400
+            letter-spacing: 0px
+            margin-bottom: 160px
+            letter-spacing: -3px
+        &__inner
+            font-family: "freightbigcmp-pro"
+            font-size: 96px
+            letter-spacing: 0px
+        &__items
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: flex-start
+            text-align: center
+        &__item
+            width: 300px
+        &__img
+            width: 170px
+        &__paragraph
+            font-size: 20px
+            margin-top: 10px
+            line-height: 28px
+        &__link
+            display: block
+            text-decoration: none
+            color: #000000
+            border: solid 1px #000000
+            height: 46px
+            width: 206px
+            line-height: 46px
+            font-size: 13px
+            margin: 35px auto 0 auto
+            transition: .3s
+            &:hover
+                color: white
+                background-color: black
+    .points.padding-smaller
+        padding: 180px 29px 50px 29px
+    .points
+        display: none
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 180px 29px 50px 29px
+        background-color: #FCF7F2
+        &__inner
+            width: 50%
+        &__inner:nth-child(2)
+            min-height: 495px
+        &__video
+            width: 100%
+        &__img
+            width: 100%
+        &__title
+            font-family: 'UniversLTPro-65Bold'
+            font-size: 34px
+            margin-bottom: 40px
+        &__title.howto
+            margin-bottom: 27px
+        &__title2
+            margin-bottom: 37px
+            max-width: 400px
+        &__list
+            margin-left: 100px
+            list-style: none
+        &__item
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+            margin-bottom: 20px
+        &__tick
+            width: 35px
+        &__text
+            font-size: 20px
+            font-weight: 400
+            margin-left: 20px
+            line-height: 28px
+        &__link
+            display: block
+            margin: 70px 0 0 100px
+            font-size: 13px
+            background-color: #222222
+            height: 48px
+            width: 196px
+            line-height: 47px
+            text-align: center
+            text-decoration: none
+            color: white
+            transition: .3s
+            &:hover
+                background-color: black
+    .slider
+        display: flex
+        flex-direction: row
+        align-items: center
+        flex-wrap: nowrap
+        padding: 120px 0
+        overflow-x: scroll
+        background-color: #FCF7F2
+    .reminder
+        text-align: center
+        padding: 116px 50px
+        font-size: 82px
+        line-height: 85px
+        letter-spacing: -3px
+        &__text.inner
+            font-family: "freightbigcmp-pro"
+            font-size: 96px
+            letter-spacing: 0px
+    .faq
+        padding: 110px 35px
+        background-color: #FCF7F2
+        font-size: 20px
+        line-height: 28px
+        &__title
+            font-family: "freightbigcmp-pro"
+            font-size: 96px
+            text-align: center
+            margin-bottom: 160px
+        &__question
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: center
+            border-top: 1px solid #000000
+            padding: 34px 150px
+            cursor: pointer
+        &__question:last-of-type
+            border-bottom: 1px solid #000000
+        &__paragraph
+            width: calc( 100% - 46px - 35px )
+        &__btn
+            position: relative
+            width: 46px
+            height: 46px
+            margin-left: 35px
+            background-color: #222222
+        &__btn-line
+            position: absolute
+            background-color: white
+            width: 24px
+            height: 2px
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+        &__btn-line.vertical
+            transform: translate(-50%,-50%) rotate(90deg)
+            transition: .3s
+        &__btn-line.vertical.open
+            transform: translate(-50%,-50%) rotate(0deg)
+        &__answer
+            padding: 34px 130px 34px 0
+            width: 100%
+            display: none
+        &__answer.visible
+            display: block
+            animation: show-section 1s
+        &__link
+            font-size: inherit
+            color: inherit
+            font-family: inherit
+            text-decoration: underline
+    .footer
+        position: relative
+        padding: 58px 0px 0px 0px
+        background-color: white
+        max-width: 1300px
+        width: 100%
+        margin: 0 auto
+        &__title
+            font-family: "freightbigcmp-pro"
+            font-size: 96px
+            line-height: 96px
+            font-weight: 400
+            text-align: center
+            margin-bottom: 160px
+            letter-spacing: 0px
+        &__container
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+            text-align: center
+        &__inner
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            width: 350px
+            height: 240px
+        &__text1
+            font-family: 'UniversLTPro-65Bold'
+            font-size: 34px
+            line-height: 40px
+            margin-bottom: 15px
+        &__text2
+            font-size: 20px
+            line-height: 28px
+            font-weight: 400
+            margin-bottom: 35px
+        &__link
+            display: block
+            text-align: center
+            width: 178px
+            height: 48px
+            line-height: 47px
+            background-color: #222222
+            text-decoration: none
+            margin: 0 auto
+            color: white
+            cursor: pointer
+            font-size: 13px
+            transition: .3s
+            &:hover
+                background-color: black
+        &__link.white
+            height: 46px
+            line-height: 46px
+            background-color: white
+            border: 1px solid #222222
+            color: black
+            transition: .3s
+            &:hover
+                background-color: black
+                color: white
+        &__white-line
+            position: absolute
+            left: 0
+            right: 0
+            bottom: -104px
+            height: 104px
+            background-color: white
+
+.wrap
+    width: 100%
+    max-width: 1300px
+    margin: 0 auto
+.wrap-footer
+    width: 100%
+    background-color: white
+
+#physical:target, #electronic:target
+    .points, .cards,
+        display: flex
+
+#physical:target, #electronic:target
+    .instructions
+        display: block
+
+#points:target
+    display: flex
+
+#points:target ~ .cards,
+    display: flex
+
+#epoints:target
+    display: flex
+
+#epoints:target ~ .cards,
+    display: flex
+
+#epoints:target ~ .instructions
+    display: block
+
+#points:target ~ .instructions
+    display: block
+
+#points:target ~ .scroll-carousel-with-arrows
+    display: flex
+
+@keyframes show-section
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@media (max-width: 1300px)
+    .main
+        .header
+            &__popup
+                left: initial
+@media (max-width: 1200px)
+    .main
+        .header
+            &__motto
+                left: 80px
+        .nav
+            padding: 0 80px
+        #physical, #electronic, #howto
+            .cards
+                padding: 0px 80px 60px 80px
+            .instructions
+                padding: 58px 80px
+
+@media (max-width: 1024px)
+    .main
+        .header
+            &__paragraph
+                font-size: 84px
+                line-height: 80px
+        .nav
+            padding: 0 40px
+        #physical, #electronic, #howto
+            .instructions
+                padding: 58px 40px
+                &__items
+                    flex-wrap: wrap
+                    justify-content: center
+                    gap: 80px
+                &__title
+                    font-size: 65px
+                &__inner
+                    font-size: 84px
+            .reminder
+                font-size: 65px
+                line-height: 66px
+                &__text.inner
+                    font-size: 84px
+            .faq
+                &__question
+                    padding: 34px 70px
+                &__title
+                    font-size: 84px
+            .points
+                &__list
+                    margin-left: 70px
+                &__link
+                    margin: 70px 0 0 70px
+            .footer
+                &__title
+                    font-size: 84px
+                    margin-bottom: 160px
+            .scroll-carousel-with-arrows
+                &__container
+                    width: 3290px
+                &__item
+                    height: 360px
+
+@media (max-width: 900px)
+    .main
+        .header
+            &__motto
+                left: 40px
+                top: 50%
+        #physical, #electronic, #howto
+            .cards
+                padding: 0px 40px 60px 40px
+                &__title
+                    font-size: 22px
+                    line-height: 30px
+                &__paragraph
+                    font-size: 17px
+                    line-height: 26px
+                    margin-bottom: 60px
+                &__motto
+                    height: 300px
+            .instructions
+                padding: 58px 40px
+                &__paragraph
+                    font-size: 17px
+                    line-height: 26px
+            .faq
+                &__question
+                    padding: 34px 40px
+                    font-size: 17px
+                    line-height: 26px
+                &__answer
+                    font-size: 17px
+                    line-height: 26px
+            .points
+                &__title
+                    font-size: 22px
+                    line-height: 30px
+                &__text
+                    font-size: 17px
+                    line-height: 26px
+                &__tick
+                    width: 25px
+                    height: 25p
+                &__list
+                    margin-left: 50px
+                &__link
+                    margin: 60px 0 0 50px
+            .footer
+                &__inner
+                    height: 210px
+                &__text1
+                    font-size: 22px
+                    line-height: 30px
+                &__text2
+                    font-size: 17px
+                    line-height: 26px
+            .scroll-carousel-with-arrows
+                &__container
+                    width: 2540px
+                &__item
+                    height: 277px
+
+@media (max-width: 764px)
+    .main
+        .header
+            &__motto
+                left: 40px
+                top: 50%
+            &__motto-links
+                flex-direction: column
+                gap: 10px
+            &__paragraph
+                margin-bottom: 27px
+            &__buttons
+                top: 45%
+            &__popup
+                display: none
+            &__placeholder-img
+                aspect-ratio: 764/1358
+            &__placeholder-loader
+                top: 45%
+        .nav
+            padding: 0
+            &__item:last-child
+                display: flex
+        #physical, #electronic, #howto
+            .reminder
+                font-size: 45px
+                line-height: 46px
+                padding: 80px 50px
+                &__text.inner
+                    font-size: 60px
+            .instructions
+                padding: 58px 40px
+                &__title
+                    font-size: 45px
+                    line-height: 60px
+                    margin-bottom: 100px
+                &__inner
+                    font-size: 60px
+            .faq
+                padding: 73px 0
+                &__title
+                    font-size: 60px
+                    margin-bottom: 73px
+                &__question
+                    padding: 34px 34px
+                &__paragraph
+                    font-size: 17px
+                &__answer
+                    font-size: 17px
+            .points.padding-smaller
+                padding: 180px 29px 50px 29px
+            .footer
+                &__title
+                    font-size: 60px
+                    margin-bottom: 100px
+            .scroll-carousel-with-arrows
+                padding-bottom: 0px
+
+@media (max-width: 650px)
+    .main
+        .header
+            &__motto
+                left: 15px
+                top: 72%
+            &__paragraph
+                font-size: 46px
+                line-height: 46px
+            &__title
+                width: 280px
+            &__arrow
+                display: block
+        .nav
+            padding: 0
+            overflow-y: hidden
+            overflow-x: auto
+            scroll-behavior: smooth
+            -ms-overflow-style: none
+            scrollbar-width: none
+            &::-webkit-scrollbar
+                display: none
+            &__list
+                width: 650px
+                justify-content: flex-start
+            &__item
+                width: calc( 650px / 3 )
+                height: 100%
+            &__bottom-line
+                bottom: 0
+        #physical, #electronic, #howto
+            top: -104px
+            .cards
+                padding: 0px 15px 60px 15px
+                flex-wrap: wrap
+                &__inner
+                    width: 100%
+                &__inner:first-child
+                    order: 1
+                &__animation-physical
+                    left: -2%
+                    bottom: 15px
+                    width: 100%
+                &__motto
+                    height: auto
+                &__title
+                    font-size: 22px
+                    width: 100%
+                    max-width: none
+                    text-align: left
+                    line-height: 30px
+                &__paragraph
+                    font-size: 17px
+                    line-height: 26px
+                    margin-bottom: 40px
+                &__link
+                    width: 100%
+            .reminder
+                padding: 60px 15px
+                font-size: 40px
+                line-height: 40px
+                &__text.inner
+                    font-size: 50px
+            .instructions
+                padding: 60px 15px
+                &__title
+                    font-size: 40px
+                    line-height: 40px
+                &__inner
+                    font-size: 50px
+                &__paragraph
+                    font-size: 17px
+                    line-height: 26px
+            .points.moved-padding
+                padding: 276px 0px 60px 0px
+            .points.padding-smaller
+                padding: 150px 0px 80px 0px
+            .points
+                padding: 150px 0px 80px 0px
+                flex-wrap: wrap
+                &__inner
+                    width: 100%
+                &__inner:last-child
+                    padding: 50px 25px 0px 15px
+                &__list
+                    margin-left: 0px
+                &__link
+                    width: 100%
+                    margin-top: 40px
+                    margin-left: 0px
+            .faq
+                &__title
+                    font-size: 50px
+                &__answer
+                    padding: 34px 0px 34px 0
+
+            .footer
+                padding: 60px 0px 0px 0px
+                &__title
+                    font-size: 50px
+                    margin-bottom: 60px
+                &__container
+                    flex-wrap: wrap
+                &__inner
+                    width: 100%
+                    margin-bottom: 60px
+                &__inner:last-child
+                    height: 180px
+                    margin-bottom: 0px
+                &__text1
+                    font-size: 22px
+                    margin-bottom: 5px
+                &__text2
+                    font-size: 17px
+            .scroll-carousel-with-arrows
+                &__container
+                    width: 1540px
+                &__item
+                    height: 166px
