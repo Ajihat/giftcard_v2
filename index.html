@@ -11,26 +11,6 @@
     <body>
         <div class="main">
             <div class="header">
-                <div class="header__buttons">
-                    <img
-                        src="assets/pause-btn.svg"
-                        alt="icon"
-                        class="header__buttons-img"
-                    />
-                </div>
-                <div class="header__placeholder">
-                    <img
-                        src="assets/bcg-placeholder-desktop.jpg"
-                        alt="background"
-                        class="header__placeholder-img"
-                        id="video-placeholder"
-                    />
-                    <img
-                        src="assets/loadIcon.gif"
-                        alt="loader"
-                        class="header__placeholder-loader"
-                    />
-                </div>
                 <video
                     class="header__video header__video--js"
                     autoplay
@@ -282,13 +262,6 @@
                             class="slider-cards__img"
                         />
                     </div>
-                    <div class="slider-cards__item">
-                        <img
-                            src="assets/card4.jpg"
-                            alt=""
-                            class="slider-cards__img"
-                        />
-                    </div>
                 </div>
                 <div class="saldo">
                     <h3 class="saldo__title">
@@ -479,16 +452,8 @@
 
         <script>
             (function () {
-                var videoTag = document.querySelector('.header__video--js'),
-                    videoSourceTag = document.querySelector(
-                        '.header__video--js source'
-                    ),
-                    desktopVideoSrc = 'video/video-1920x108056a410ae.mp4',
-                    mobileVideoSrc = 'video/video-764x76465db223d.mp4',
-                    videoSourceSrc = videoSourceTag.getAttribute('src'),
-                    videoSourceDataSrc =
-                        videoSourceTag.getAttribute('data-src'),
-                    tabletMediaQuery = 764,
+                
+                    var tabletMediaQuery = 764,
                     HeaderBtnLink = document.querySelector('.header__link'),
                     firstNavLink = document.querySelector('.nav__link.first'),
                     secondNavLink = document.querySelector('.nav__link.middle'),
@@ -515,41 +480,12 @@
                   })
 
 
-                function setVideoSource() {
-                    var windowWidth = window.innerWidth,
-                        videoSource = videoSourceTag.getAttribute('src');
 
-                    if (
-                        windowWidth > tabletMediaQuery &&
-                        videoSource !== desktopVideoSrc
-                    ) {
-                        videoSourceTag.setAttribute('src', desktopVideoSrc);
-                        videoTag.load();
-                    }
-                    if (
-                        windowWidth <= tabletMediaQuery &&
-                        videoSource !== mobileVideoSrc
-                    ) {
-                        videoSourceTag.setAttribute('src', mobileVideoSrc);
-                        videoTag.load();
-                    }
-                }
+               
 
-                window.addEventListener('load', function () {
-                    setVideoSource();
-                });
+                
 
-                window.addEventListener('resize', setVideoSource);
-
-                videoButtonArea.addEventListener('click', function () {
-                    if (videoTag.paused) {
-                        videoTag.play();
-                        videoButton.setAttribute('src', 'assets/pause-btn.svg');
-                    } else {
-                        videoTag.pause();
-                        videoButton.setAttribute('src', 'assets/play-btn.svg');
-                    }
-                });
+               
 
                 var menuLinks = [...document.querySelectorAll('.nav__link')];
                 menuLinks.forEach(addBottomLine);
@@ -705,7 +641,7 @@
                         slider.scrollBy(cardSliderWidth + 10, 0);
                         if (
                             slider.scrollLeft + slider.offsetWidth >=
-                                4 * cardsSlider[0].offsetWidth &&
+                                3 * cardsSlider[0].offsetWidth &&
                             cardsSliderIsScrolled
                         ) {
                             slider.scrollLeft = 0;
@@ -717,7 +653,7 @@
                 slider.addEventListener('scroll', function () {
                     if (
                         slider.scrollLeft + slider.offsetWidth >=
-                        4 * cardsSlider[0].offsetWidth
+                        3 * cardsSlider[0].offsetWidth
                     ) {
                         cardsSliderIsScrolled = true;
                     }
